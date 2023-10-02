@@ -12,15 +12,17 @@ class DoaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDoaBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        //navbar
+
         val actionBar = supportActionBar
         actionBar!!.title = "Doa Harian"
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
+
+        binding = ActivityDoaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
     }
     //button back action bar
+
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return super.onSupportNavigateUp()
