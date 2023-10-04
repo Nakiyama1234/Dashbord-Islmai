@@ -14,10 +14,12 @@
         android:src="@drawable/bg_header_doa" />
 
     <LinearLayout
+        android:id="@+id/ll_pertama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/img_doa"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
 
 
         <androidx.cardview.widget.CardView
@@ -25,8 +27,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
             android:layout_weight="1"
             app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
             app:contentPadding="16dp">
 
             <LinearLayout
@@ -44,9 +48,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/poppins_semi_bold"
-                    android:text="Pagi Dan Malam"
-                    android:textColor="@color/colorText"
-                    android:textAlignment="center"/>
+                    android:text="@string/pagi_dan_malam"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorText" />
 
             </LinearLayout>
 
@@ -55,10 +59,12 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/doa_rumah"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
             android:layout_weight="1"
             app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
             app:contentPadding="16dp">
 
             <LinearLayout
@@ -69,14 +75,161 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/ic_doa_pagi_malam" />
+                    android:src="@drawable/ic_doa_rumah" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:fontFamily="@font/poppins_semi_bold"
-                    android:text="Rumah"
+                    android:text="@string/rumah"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorText" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/makanan_minuman"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_doa_makanan_minuman" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/makanan_amp_minuman"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorText" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_kedua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_pertama"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/doa_perjalanan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_doa_perjalanan" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/perjalanan"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorText" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sholat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_doa_sholat" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/sholat"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorText" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/etika_baik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="10dp"
+            app:contentPadding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_doa_etika_baik" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:text="@string/etika_baik"
                     android:textAlignment="center"
                     android:textColor="@color/colorText" />
 
