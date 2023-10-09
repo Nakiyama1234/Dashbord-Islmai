@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.naufal.idnsolo.dashboardislmai.R
 
-class InspirationListAdapter
+class   InspirationListAdapter
     (private val listInspiration: ArrayList<InspirationModel>) :
     RecyclerView.Adapter<InspirationListAdapter.ListViewHolder>() {
 
