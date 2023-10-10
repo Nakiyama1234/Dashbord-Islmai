@@ -13,5 +13,7 @@ class ListDoaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailListDoaBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        companion obje
     }
 }
