@@ -13,12 +13,13 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/img_makan_minum"
+            android:id="@+id/imgDoa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_doa_makanan_minuman" />
 
         <TextView
+            android:id="@+id/tvDoa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"

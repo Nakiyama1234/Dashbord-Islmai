@@ -2,10 +2,9 @@ package com.naufal.idnsolo.dashboardislmai.doa
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.naufal.idnsolo.dashboardislmai.databinding.ActivityDetailDoaBinding
 import com.naufal.idnsolo.dashboardislmai.databinding.ActivityDetailListDoaBinding
 
-class DetailListDoaActivity : AppCompatActivity() {
+class ListDoaActivity : AppCompatActivity() {
 
 
     private lateinit var binding: ActivityDetailListDoaBinding
