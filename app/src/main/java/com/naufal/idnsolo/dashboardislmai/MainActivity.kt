@@ -21,12 +21,15 @@ class MainActivity : AppCompatActivity() {
 
         initRecyclerViewInspiration()
 
-        showMenu()
+        moveActivity()
 
     }
 
-    private fun showMenu() {
+    private fun moveActivity() {
         binding.btnDoa.setOnClickListener {
+            startActivity(Intent(this, DoaActivity::class.java))
+        }
+        binding.btnZakat.setOnClickListener{
             startActivity(Intent(this, DoaActivity::class.java))
         }
     }

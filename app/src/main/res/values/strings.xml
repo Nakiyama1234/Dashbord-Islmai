@@ -14,4 +14,13 @@
     <string name="pagi_dan_malam">Pagi Dan Malam</string>
     <string name="rumah">Doa Di Rumah</string>
     <string name="doa_makan_dan_minum">Doa Makanan Dan Minuman</string>
+    <string name="harga_emas_hari_ini_16_oct_2023">Harga Emas - 16 Oct 2023</string>
+    <string name="_1_gram">1 Gram</string>
+    <string name="rp_1_087_00">Rp.1.087.00</string>
+    <string name="_85_gram">85 Gram</string>
+    <string name="rp_92_395_000">Rp.92.395.000</string>
+    <string name="hitung">Hitung Zakat</string>
+    <string name="status">Status</string>
+    <string name="wajib">Wajib</string>
+    <string name="zakat_yang_di_kelurkan">Zakat Yang Di Kelurkan</string>
 </resources>
