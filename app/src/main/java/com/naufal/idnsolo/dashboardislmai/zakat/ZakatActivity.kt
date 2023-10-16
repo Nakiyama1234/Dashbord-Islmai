@@ -26,16 +26,20 @@ class ZakatActivity : AppCompatActivity() {
             var isEmptyField = false
             val totalHarta = binding.totalHartaAll.text.trim().toString()
 
-            if (!isEmpty) {
+            if (totalHarta.isEmpty()) {
+                isEmptyField = true
                 binding.totalHartaAll.error = "Fild ini tidak boleh kosong"
             }
 
-            if (isEmptyField) {
+            if (!isEmptyField) {
                 val emas = 92395000
                 val persen = 0.025
                 val localeID = Locale("in", "ID")
                 val formatRupiah: NumberFormat = NumberFormat.getCurrencyInstance(localeID)
-                if (totalHarta < emas.toString()) {
+                val totalHarta= binding.totalHartaAll.text.toString().trim()
+
+                if (totalHarta.isEmpty()) {
+                    isEmptyField = true
                     binding.status.text = "Belum wajib zakat"
 
                 } else {
