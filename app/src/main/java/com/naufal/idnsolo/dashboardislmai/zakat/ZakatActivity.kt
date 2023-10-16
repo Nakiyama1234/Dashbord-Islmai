@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.naufal.idnsolo.dashboardislmai.R
 import com.naufal.idnsolo.dashboardislmai.databinding.ActivityZakatBinding
+import java.text.NumberFormat
+import java.util.Locale
 
 class ZakatActivity : AppCompatActivity() {
 
@@ -31,13 +33,15 @@ class ZakatActivity : AppCompatActivity() {
             if (isEmptyField) {
                 val emas = 92395000
                 val persen = 0.025
-
+                val localeID = Locale("in", "ID")
+                val formatRupiah: NumberFormat = NumberFormat.getCurrencyInstance(localeID)
                 if (totalHarta < emas.toString()) {
                     binding.status.text = "Belum wajib zakat"
+
                 } else {
                     val zakat = totalHarta.toDouble() * persen
                     binding.status.text = "Wajib Zakat"
-                    binding.zakatYangDikeluarkan.text = "Rp. $zakat"
+                    binding.zakatYangDikeluarkan.text = formatRupiah.format(zakat)
                 }
 
             }

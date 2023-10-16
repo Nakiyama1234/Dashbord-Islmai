@@ -13,7 +13,7 @@
         android:text="@string/harga_emas_hari_ini_16_oct_2023"
         android:textAlignment="center"
         android:textColor="@color/colorBlue"
-        android:theme="@style/TextAppearance.AppCompat.Title" />
+        android:theme="@style/TextAppearance.AppCompat.Headline" />
 
     <TableLayout
         android:layout_width="match_parent"
