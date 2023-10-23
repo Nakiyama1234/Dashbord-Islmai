@@ -25,4 +25,8 @@
     <string name="zakat_yang_di_kelurkan">Zakat Yang Di Kelurkan</string>
     <string name="zakat">Zakat</string>
     <string name="total_harat_keseluruhan">Total Harat Keseluruhan</string>
+    <string name="judul_kajian">Judul Kajian</string>
+    <string name="utadz_kholid_basamalah">Utadz Kholid Basamalah</string>
+    <string name="nama_penceramah">Nama Penceramah</string>
+    <string name="channel_youtube">Channel Youtube</string>
 </resources>

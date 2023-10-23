@@ -30,7 +30,7 @@ class ZakatActivity : AppCompatActivity() {
 
             if (inputZakat.isEmpty()) {
                 isEmptyField = true
-                binding.totalHartaAll.error = "Fild ini tidak boleh kosong"
+                binding.totalHartaAll.error = "Field ini tidak boleh kosong"
             }
 
             if (!isEmptyField) {
@@ -40,18 +40,15 @@ class ZakatActivity : AppCompatActivity() {
                     binding.zakatYangDikeluarkan.text = formatRupiah.format(0)
                     Toast.makeText(this, "Tidak Wajib Zakat", Toast.LENGTH_SHORT).show()
                 } else {
-                    //rumus zakat
-                    //total harta / 2.5% = zakat yang di keluarkan
-                    //total harta / 0.025 = zakat di keluarkanz
-                    binding.zakatYangDikeluarkan.text = formatRupiah.format(
-                        binding.totalHartaAll.text.toString().toDouble()!! * 0.025
-                    )
+                    binding.TotalHartaKeseluruhan.text = formatRupiah.format(inputZakat.toInt()!!)
+                    binding.status.text = "Wajib Zakat"
+                    binding.zakatYangDikeluarkan.text =
+                        formatRupiah.format(inputZakat.toInt()!! * 0.025)
                     Toast.makeText(this, "Wajib Zakat", Toast.LENGTH_SHORT).show()
                 }
             }
         }
     }
-
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         if (item.itemId == android.R.id.home) {
             onBackPressed()

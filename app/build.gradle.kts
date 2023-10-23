@@ -51,6 +51,7 @@ dependencies {
     //glide untuk menampilkan gambar
     implementation("com.github.bumptech.glide:glide:4.12.0")
 
-    //android parcelize
+    //Youtube Copy
+    implementation ("com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5")
 
 }

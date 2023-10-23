@@ -9,6 +9,7 @@ import com.naufal.idnsolo.dashboardislmai.doa.DoaActivity
 import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationData
 import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationListAdapter
 import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationModel
+import com.naufal.idnsolo.dashboardislmai.kajian.KajianActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,6 +32,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnZakat.setOnClickListener{
             startActivity(Intent(this, DoaActivity::class.java))
+        }
+        binding.btnKajian.setOnClickListener{
+            startActivity(Intent(this, KajianActivity::class.java))
         }
     }
 
