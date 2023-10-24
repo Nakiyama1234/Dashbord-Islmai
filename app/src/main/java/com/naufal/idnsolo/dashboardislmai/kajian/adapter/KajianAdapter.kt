@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.naufal.idnsolo.dashboardislmai.R
 import com.naufal.idnsolo.dashboardislmai.kajian.model.KajianModel
 
@@ -30,8 +31,10 @@ class KajianAdapter(private val listkajian: ArrayList<KajianModel>) :
     }
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
-        var kajian = listkajian[position]
+        val kajian = listkajian[position]
 
-
+        holder.tvPenceramah.text = kajian.speaker
+        holder.tvChannel.text = kajian.speaker
+        holder.tvJudul.text = kajian.title
     }
 }
