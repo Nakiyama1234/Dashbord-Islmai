@@ -42,4 +42,7 @@
         </activity>
     </application>
 
+<!--    Permit Internet-->
+    <uses-permission android:name="android.permission.INTERNET" />
+
 </manifest>

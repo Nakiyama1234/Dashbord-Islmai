@@ -70,9 +70,20 @@
                 android:padding="10dp"
                 android:text="@string/lorem" />
 
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="16dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_baseline_share_24"/>
+
         </LinearLayout>
 
 
     </ScrollView>
+
+
 
 </LinearLayout>
