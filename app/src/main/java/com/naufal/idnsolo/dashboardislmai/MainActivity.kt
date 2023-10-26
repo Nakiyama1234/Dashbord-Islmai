@@ -10,6 +10,9 @@ import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationData
 import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationListAdapter
 import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationModel
 import com.naufal.idnsolo.dashboardislmai.kajian.KajianActivity
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -21,9 +24,31 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initRecyclerViewInspiration()
-
         moveActivity()
+        initTimeForSholat()
 
+    }
+
+    private fun initTimeForSholat() {
+        val timeNow = Calendar.getInstance()
+        val timeFormat = SimpleDateFormat("HH:mm:ss", Locale.getDefault());
+        val time = timeFormat.format(timeNow.time)
+
+
+        when{
+            time.toInt() in 0..5 -> binding.imageHeader.setImageResource(
+                R.drawable.bg_header_dashboard_night
+            )
+            time.toInt() in 6..11 -> binding.imageHeader.setImageResource(
+                R.drawable.bg_header_dashboard_morning
+            )
+            time.toInt() in 12..17 -> binding.imageHeader.setImageResource(
+                R.drawable.bg_header_dashboard_afternoon
+            )
+            time.toInt() in 18..23 -> binding.imageHeader.setImageResource(
+                R.drawable.bg_header_dashboard_night
+            )
+        }
     }
 
     private fun moveActivity() {

@@ -31,4 +31,7 @@
     <string name="channel_youtube">Channel Youtube</string>
     <string name="detail_kajian">Detail Kajian</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit vestibulum odio, et convallis nulla venenatis non. Donec scelerisque felis ac sem egestas cursus. Suspendisse potenti. Morbi porttitor, erat ut scelerisque posuere, velit metus pellentesque ipsum, quis egestas neque justo vitae est. Ut eget tristique nibh. In consectetur metus eu justo ultricies tincidunt. Donec quis feugiat libero, in molestie lorem. Nam aliquet turpis ante, sit amet euismod dolor consequat a. Morbi commodo euismod nisl.</string>
+    <string name="subuh">Subuh</string>
+    <string name="_04_00">04.00</string>
+    <string name="ngargoyoso">Ngargoyoso</string>
 </resources>
