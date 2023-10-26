@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initTimeForSholat() {
         val timeNow = Calendar.getInstance()
-        val timeFormat = SimpleDateFormat("HH:mm:ss", Locale.getDefault());
+        val timeFormat = SimpleDateFormat("HH")
         val time = timeFormat.format(timeNow.time)
 
 

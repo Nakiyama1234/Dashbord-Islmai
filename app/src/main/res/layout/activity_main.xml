@@ -50,12 +50,13 @@
                     android:textAlignment="center"
                     android:fontFamily="@font/poppins_regular"/>
 
-                <TextView
+                <TextClock
+                    android:id="@+id/tv_jam_sholat"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:text="@string/_04_00"
                     android:textSize="20sp"
+                    android:hint="00.00"
                     android:fontFamily="@font/poppins_semi_bold"/>
 
                 <TextView
