@@ -115,29 +115,6 @@
 
                     </LinearLayout>
 
-                    <!--dzikir menu-->
-                    <LinearLayout
-                        android:id="@+id/btn_dzkr"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:padding="10dp">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_menu_dzikir" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="@font/poppins_medium"
-                            android:text="@string/dzikir"
-                            android:textAlignment="center"
-                            android:textColor="@color/colorText"
-                            android:textSize="15sp" />
-
-                    </LinearLayout>
 
                     <!--zakat-->
                     <LinearLayout
