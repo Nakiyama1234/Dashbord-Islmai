@@ -4,6 +4,7 @@ import android.app.Activity
 import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import com.loopj.android.http.AsyncHttpClient
 import com.naufal.idnsolo.dashboardislmai.R
@@ -32,6 +33,8 @@ class SholatActivity : AppCompatActivity() {
         val bulan = calendar.get(Calendar.MONTH)
         val tahun = calendar.get(Calendar.YEAR)
         val client = AsyncHttpClient()
+        val url = "https://api.myquran.com/v1/sholat/jadwal/$location/$tahun/$bulan/$tanggal"
+        Log.d("SholaActivity", "getPrayTimeData(): $url")
     }
 
     private fun initSholatView() {

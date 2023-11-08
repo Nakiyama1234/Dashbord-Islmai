@@ -10,6 +10,7 @@ import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationData
 import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationListAdapter
 import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationModel
 import com.naufal.idnsolo.dashboardislmai.kajian.KajianActivity
+import com.naufal.idnsolo.dashboardislmai.sholat.SholatActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
@@ -60,6 +61,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnKajian.setOnClickListener{
             startActivity(Intent(this, KajianActivity::class.java))
+        }
+        binding.btnJadwalSholat.setOnClickListener{
+            startActivity(Intent(this@MainActivity, SholatActivity::class.java))
         }
     }
 

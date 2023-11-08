@@ -14,9 +14,9 @@ class DoaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        val actionBar = supportActionBar
-        actionBar!!.title = "Doa Harian"
-        actionBar.setDisplayHomeAsUpEnabled(true)
+//        val actionBar = supportActionBar
+//        actionBar!!.title = "Doa Harian"
+//        actionBar.setDisplayHomeAsUpEnabled(true)
 
         intentToListActivity()
 

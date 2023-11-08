@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.naufal.idnsolo.dashboardislmai.R
 import com.naufal.idnsolo.dashboardislmai.doa.DetailDoaActivity
+import com.naufal.idnsolo.dashboardislmai.doa.ListDoaActivity
 import com.naufal.idnsolo.dashboardislmai.doa.model.DoaModel
 
 class DoaListAdapter (
@@ -26,7 +27,7 @@ class DoaListAdapter (
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_doa, parent,false)
-        return ListViewHolder((view)
+        return ListViewHolder((view))
     }
 
     override fun getItemCount(): Int {
@@ -42,9 +43,9 @@ class DoaListAdapter (
             .into(holder.imgDoa)
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(it.context)
-            intent.putExtra(DetailDoaActivity.EXTRA.DOA, doa)
-            it.context.startActivities(intent)
+            val intent = Intent(it.context, DetailDoaActivity::class.java)
+            intent.putExtra(DetailDoaActivity.EXTRA_DOA, doa)
+            it.context.startActivity(intent)
         }
 
     }
