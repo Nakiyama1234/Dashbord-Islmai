@@ -5,8 +5,10 @@ import android.os.Binder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import com.loopj.android.http.AsyncHttpClient
 import com.naufal.idnsolo.dashboardislmai.R
 import com.naufal.idnsolo.dashboardislmai.databinding.ActivitySholatBinding
+import java.nio.channels.AsynchronousChannel
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Date
@@ -21,21 +23,24 @@ class SholatActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.toolbar)
         initSholatView()
+        getPrayTimeData("1505")
+    }
+
+    private fun getPrayTimeData(location: String) {
+        val calendar = Calendar.getInstance()
+        val tanggal = calendar.get(Calendar.DAY_OF_MONTH)
+        val bulan = calendar.get(Calendar.MONTH)
+        val tahun = calendar.get(Calendar.YEAR)
+        val client = AsyncHttpClient()
     }
 
     private fun initSholatView() {
-        val date: Date = Calendar.getInstance().time
-        val dateFormat = SimpleDateFormat("EEE, dd MMM yyy")
-        val today = dateFormat.format(date)
+        val waktu = Calendar.getInstance().time
+        val dateFormat = SimpleDateFormat("EEEE, dd MMMM yyyy", Locale.getDefault())
+        val formattedDate = dateFormat.format(waktu)
 
-        binding.tvDatePray.text = today
-
-        initGetDataSholat(today, "Jakarta")
-    }
-
-    private fun initGetDataSholat(today: String, s: String) {
-        val dateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-        val date = dateFormat.format(Date())
+//        Tanggal Tampilan
+        binding.tvDatePray.text = formattedDate
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
