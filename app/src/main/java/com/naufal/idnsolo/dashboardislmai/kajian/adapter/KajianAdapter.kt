@@ -24,7 +24,7 @@ class KajianAdapter(private val listkajian: ArrayList<KajianModel>) :
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
         val view = LayoutInflater.from(parent.context)
-            .inflate(R.layout.item_row_doa, parent, false)
+            .inflate(R.layout.item_row_kajian, parent, false)
 
         return ListViewHolder(view)
     }

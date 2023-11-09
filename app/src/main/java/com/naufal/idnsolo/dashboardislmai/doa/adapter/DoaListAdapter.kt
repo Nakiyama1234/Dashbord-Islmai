@@ -1,4 +1,4 @@
-package com.naufal.idnsolo.dashboardislmai.adapter
+package com.naufal.idnsolo.dashboardislmai.doa.adapter
 
 import android.content.Intent
 import android.icu.text.CaseMap.Title
@@ -43,9 +43,9 @@ class DoaListAdapter (
             .into(holder.imgDoa)
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(it.context, DetailDoaActivity::class.java)
+            val intent = Intent(holder.itemView.context, DetailDoaActivity::class.java)
             intent.putExtra(DetailDoaActivity.EXTRA_DOA, doa)
-            it.context.startActivity(intent)
+            holder.itemView.context.startActivity(intent)
         }
 
     }

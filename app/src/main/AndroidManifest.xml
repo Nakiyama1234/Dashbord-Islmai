@@ -15,6 +15,9 @@
         android:theme="@style/Theme.DashboardIslmai"
         tools:targetApi="31">
         <activity
+            android:name=".zakat.Zakat2Activity"
+            android:exported="false" />
+        <activity
             android:name=".sholat.SholatActivity"
             android:exported="false" />
         <activity

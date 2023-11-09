@@ -13,15 +13,12 @@ class DoaActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
+        binding = ActivityDoaBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 //        val actionBar = supportActionBar
 //        actionBar!!.title = "Doa Harian"
 //        actionBar.setDisplayHomeAsUpEnabled(true)
-
         intentToListActivity()
-
-        binding = ActivityDoaBinding.inflate(layoutInflater)
-        setContentView(binding.root)
     }
 
     private fun intentToListActivity() {

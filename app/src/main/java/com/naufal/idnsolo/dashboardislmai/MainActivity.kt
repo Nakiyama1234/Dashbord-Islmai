@@ -11,9 +11,9 @@ import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationListAdapter
 import com.naufal.idnsolo.dashboardislmai.inspiration.InspirationModel
 import com.naufal.idnsolo.dashboardislmai.kajian.KajianActivity
 import com.naufal.idnsolo.dashboardislmai.sholat.SholatActivity
+import com.naufal.idnsolo.dashboardislmai.zakat.ZakatActivity
 import java.text.SimpleDateFormat
 import java.util.Calendar
-import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
 
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, DoaActivity::class.java))
         }
         binding.btnZakat.setOnClickListener{
-            startActivity(Intent(this, DoaActivity::class.java))
+            startActivity(Intent(this, ZakatActivity::class.java))
         }
         binding.btnKajian.setOnClickListener{
             startActivity(Intent(this, KajianActivity::class.java))

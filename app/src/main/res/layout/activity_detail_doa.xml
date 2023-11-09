@@ -7,11 +7,13 @@
     android:background="@drawable/bg_detail_doa"
     android:orientation="vertical"
     android:padding="35dp"
-    tools:context=".doa.DetailDoaActivity">
+    tools:context=".doa.DetailDoaActivity"
+    android:layout_gravity="center"
+    android:gravity="center">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         app:cardCornerRadius="10dp"
         app:cardElevation="15dp">
 

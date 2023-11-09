@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.naufal.idnsolo.dashboardislmai.R
-import com.naufal.idnsolo.dashboardislmai.adapter.DoaListAdapter
-import com.naufal.idnsolo.dashboardislmai.databinding.ActivityDetailListDoaBinding
+import com.naufal.idnsolo.dashboardislmai.doa.adapter.DoaListAdapter
+import com.naufal.idnsolo.dashboardislmai.databinding.ActivityListDoaBinding
 import com.naufal.idnsolo.dashboardislmai.doa.data.DoaEtikaBaik
 import com.naufal.idnsolo.dashboardislmai.doa.data.DoaMakananMinuman
 import com.naufal.idnsolo.dashboardislmai.doa.data.DoaPagiMalam
@@ -15,13 +15,13 @@ import com.naufal.idnsolo.dashboardislmai.doa.data.DoaSholat
 import com.naufal.idnsolo.dashboardislmai.doa.model.DoaModel
 
 class ListDoaActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityDetailListDoaBinding
+    private lateinit var binding: ActivityListDoaBinding
     lateinit var title: String
     var logo: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityDetailListDoaBinding.inflate(layoutInflater)
+        binding = ActivityListDoaBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         title = intent.getStringExtra(EXTRA_TITLE).toString()

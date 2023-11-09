@@ -15,21 +15,12 @@ class DetailDoaActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val doa = intent.getParcelableExtra<DoaModel>(EXTRA_DOA) as DoaModel
-        val actionBar = supportActionBar
-        actionBar!!.title = doa.title
-        actionBar.setDisplayHomeAsUpEnabled(true)
-
         binding.tvTitle.text = doa.title
-        binding.tvArabic.text = doa.title
-        binding.tvLatin.text = doa.title
-        binding.tvRiwayat.text = doa.title
-        binding.tvTerjemahan.text = doa.title
+        binding.tvArabic.text = doa.doa
+        binding.tvLatin.text = doa.latin
+        binding.tvRiwayat.text = doa.profile
+        binding.tvTerjemahan.text = doa.translate
 
-    }
-
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
-        return true
     }
 
     companion object {
